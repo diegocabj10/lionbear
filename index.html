@@ -42,19 +42,19 @@
       <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll active" href="#home">Home</a>
+            <a data-i18n-key="menu-home" class="nav-link js-scroll active" href="#home">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#about">Nosotros</a>
+            <a data-i18n-key="menu-about" class="nav-link js-scroll" href="#about">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Servicios</a>
+            <a data-i18n-key="menu-services" class="nav-link js-scroll" href="#service">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Proyectos</a>
+            <a data-i18n-key="menu-projects" class="nav-link js-scroll" href="#work">Proyectos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contacto</a>
+            <a data-i18n-key="menu-contact" class="nav-link js-scroll" href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
@@ -68,10 +68,10 @@
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
-          <p class="display-6 color-d">Hola Mundo!</p>
-          <h1 class="intro-title mb-4">Bievenidos a LionBear</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Fábrica de tus Proyectos</span><strong class="text-slider"></strong></p>
-          <p class="pt-3"><a class="btn btn-info btn js-scroll px-4" href="#about" role="button">Empezamos</a></p>
+          <p data-i18n-key="home-hello" class="display-6 color-d">Hola Mundo!</p>
+          <h1 data-i18n-key="home-welcome" class="intro-title mb-4">Bievenidos a LionBear</h1>
+          <p class="intro-subtitle"><a class="text-slider-items">Fábrica de tus Proyectos</a><strong class="text-slider"></strong></p>
+          <p class="pt-3"><a data-i18n-key="home-start" class="btn btn-info btn js-scroll px-4" href="#about" role="button">Empezamos</a></p>
         </div>
       </div>
     </div>
@@ -400,6 +400,7 @@
   <script src="lib/typed/typed.min.js"></script>
 
   <!-- Template Main Javascript File -->
+  <script src="js/translate.js"></script>
   <script src="js/main.js"></script>
 
 </body>
