@@ -100,18 +100,24 @@
 
   /*--/ Star Typed /--*/
   if ($('.text-slider').length == 1) {
-    let locale = 'es';
-    const translations = {
-      es: {
-        'home-factory': 'Fábrica de tus proyectos',
-      },
-			en: {
-        'home-factory': `Your projects's factory`,
-      },
-    };
+    // var locale = 'es';
+    // $('.i18n-switcher').change(function () {
+    //   locale = $('#lang-switcher').find(':selected').val();
+    // });
+    // console.log(locale);
+    
+    // const translations = {
+    //   es: {
+    //     'home-factory': 'Fábrica de tus proyectos',
+    //   },
+    //   en: {
+    //     'home-factory': `Your projects's factory`,
+    //   },
+    // };
+    // let typed_strings = translations[locale]['home-factory'];
 
-    // let typed_strings = $('.text-slider-items').text();
-    let typed_strings = translations[locale]['home-factory'];
+    let typed_strings = $('.text-slider-items').text();
+   
     let typed = new Typed('.text-slider', {
       strings: typed_strings.split(','),
       typeSpeed: 80,
