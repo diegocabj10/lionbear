@@ -11,7 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
-  background: url("../img/bg.jpg") top center no-repeat;
+  /* background: url("../img/terminal.gif") top center no-repeat; */
   background-size: cover;
   position: relative;
 }
@@ -26,9 +26,36 @@ body::before {
   background: rgba(34, 34, 34, 0.8);
 }
 
-@media (min-width: 1024px) {
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 480px) {
   body {
+    background-image: url("../img/terminal.gif");
+    background-size: contain;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/* Estilos para tabletas */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-image: url("../img/terminal.gif");
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/* Estilos para dispositivos de escritorio */
+@media screen and (min-width: 769px) {
+  body {
+    background-image: url("../img/terminal.gif");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
